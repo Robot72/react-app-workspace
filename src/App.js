@@ -3,7 +3,7 @@ import logo from './logo.svg';
 // import './App.css';
 import '../node_modules/react-simple-tree-menu/dist/main.css'
 import TreeMenu from 'react-simple-tree-menu'
-
+import Clock from './Clock'
 
 // as an array
 const treeData = [
@@ -59,6 +59,11 @@ function App() {
       <div>
         <TreeMenu data={treeData} />
         <Profile name="Alex" secondName={mySecondName} />
+      </div>
+      <div>
+        <Clock />
+        <Clock />
+        <Clock startIndex="11" />
       </div>
     </div>
   );
